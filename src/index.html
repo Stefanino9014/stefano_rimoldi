@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuickCounter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="./index.js"></script>
+    <script>
+      document.getElementById("edit-icon").addEventListener("click", function() {
+        document.getElementById("counterTitle").style.display = "none";
+        document.getElementById("titleInput").style.display = "block";
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+    <header>
+      <div class="navbar-left">
+        <a href="about.html">
+          <button id="myButton" class="custom-icon-button">
+              <img class='img' src="https://api.iconify.design/tdesign:info-circle.svg?color=%23888888" alt="Info">
+            </button>
+          </a>
+        <nav id="menu">
+          <ul>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-center">
+        <h1 id="title">QuickCounter</h1>
+      </div>
+      <div class="navbar-right">
+          </button>
+        </div>
+        </div>
+      </div>
+    </header>
+    <div id="counterContainer">
+        <div class='counter-title'>
+          <h2 id="counterTitle" class='title' contenteditable="true">Counter Name</h2>
+          <button id="addValueButton">Add Value</button>
+          <button id="reset-counter">Reset</button>
+          <input type="text" id="initialValue" style="display: none">
+        </div>
+        <div class="center-box">
+          <div id="counter" contenteditable="true">0</div>
+        </div>
+        <div class='button-base'>
+          <button id='incrementButton'>+</button>
+          <button id='decrementButton'>-</button>
+        </div>
+      </div>
+      <div id="countersContainer"></div>
+      <div class='add-counter'>
+        <button class='button-add' id="addCounterButton">Add New Counter</button>
+      </div>
+      <footer>
+        <div class='footer-content'>QuickCounter © 2023</div>  
+      </footer>
+  </body>
+</html>

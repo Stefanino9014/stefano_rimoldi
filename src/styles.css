@@ -1,0 +1,248 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+  margin: 0;
+  background-color: #1d232a;
+}
+
+header {
+  background-color: #191e24;
+  border-bottom: 1px solid white;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* @media screen and (max-width: 768px) {
+    #header {
+          }
+  }
+  @media screen and (min-width: 769px) {
+    #header {
+
+    }
+  } */
+}
+
+.custom-icon-button {
+  background-color: transparent;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  border: none;
+}
+
+.img {
+  stroke: white;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+#countersContainer {
+  padding: 0 15px 0 15px;
+}
+
+.counter-title {
+  height: 74px;
+  width: 720px;
+  max-width: 100%;
+  min-width: auto;
+  min-height: auto;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+}
+
+.title {
+  font-size: 25px;
+  color: white;
+  flex: 1;
+  margin-left: 20px;
+}
+
+#addValueButton,
+#reset-counter,
+#deleteButton {
+  height: 30px;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: transparent;
+}
+
+#titleInput {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.center-box {
+  max-width: 100%; /* Larghezza del riquadro */
+  width: 720px;
+  height: 240px; /* Altezza del riquadro */
+  min-width: auto;
+  min-height: auto;
+  border: 1px solid white; /* Colore e spessore del bordo */
+  border-top: none;
+  border-bottom: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 24px;
+  display: flex;
+}
+
+#counter {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 128px;
+  font-weight: 600;
+}
+
+.button-base {
+  max-width: 100%;
+  border: none;
+  height: 75px;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+}
+
+#incrementButton {
+  min-height: 75px;
+  min-width: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  border: 1px solid white;
+  border-bottom-left-radius: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  color: #fff; /* Colore del testo */
+  padding: 0px 20px;
+  display: flex;
+}
+
+#decrementButton {
+  min-height: 75px;
+  min-width: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 0 16rem 0 16rem;
+  width: 360px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-bottom-right-radius: 10px;
+  background-color: transparent; /* Imposta il colore con opacità al 50% */
+  color: #fff; /* Colore del testo */
+  cursor: pointer;
+}
+
+#incrementButton:hover,
+#decrementButton:hover,
+#addValueButton:hover,
+#reset-counter:hover,
+#addCounterButton:hover,
+#deleteButton:hover {
+  background-color: white;
+  color: #1d232a;
+}
+
+.item-center {
+  font-size: 128rem;
+}
+
+.button-add {
+  display: flex;
+  height: 48px;
+  max-width: 100%;
+  width: 720px;
+  border: 1px solid white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background: transparent;
+}
+
+.hide-button {
+  display: none;
+}
+
+.counter-box {
+  max-width: 100%;
+  width: 720px;
+  height: 240px;
+  min-width: auto;
+  min-height: auto;
+  border: 1px solid white;
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 24px;
+  display: flex;
+}
+
+.counter-center {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 128px;
+  font-weight: 600;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid white;
+  padding: 20px;
+  background-color: #191e24;
+}
+
+.footer-content {
+  color: white;
+}
